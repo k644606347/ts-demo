@@ -3,7 +3,7 @@ let obj1: {
     x?: number,
     y?: number
 } = {};
-let { x, y } = obj1;//解构
+let { x, y } = obj1;//解构.
 
 let log = (...args: any[]) => console.log(args);//剩余语法
 let mixed = {...obj1, mixed: true};
