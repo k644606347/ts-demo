@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "declaration": true,
+        "rootDir": "./src",
+        "target": "es5",
+        "jsx":"react",
+        "module": "esnext",
+        "lib": ["dom", "es2016", "scripthost"]
+    }
+}

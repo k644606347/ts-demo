@@ -1,0 +1,22 @@
+.btn {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    border-radius: 5px;
+    padding: .2em 1em;
+    &:active {
+        opacity: .5;
+    }
+    &.primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    &.danger {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+}
