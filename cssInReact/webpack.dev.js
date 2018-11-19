@@ -30,15 +30,16 @@ module.exports = {
                         use: [
                             {
                                 loader: 'babel-loader',
-                                options: {}
-                            }, {
+                            }, 
+                            {
                                 loader: 'ts-loader',
                                 options: {
                                     configFile: path.resolve('./tsconfig.json')
                                 }
                             }
                         ]
-                    }, {
+                    }, 
+                    {
                         test: /\.scss$/,
                         use: [
                             {
