@@ -1,13 +1,3 @@
 {
-    "presets": ["@babel/preset-env"],
-    "plugins": [
-        [
-            "babel-plugin-styled-components",
-            {
-              "displayName": true,
-              "fileName": true,
-              "minify": true
-            }
-        ]
-    ]
+    "presets": ["@babel/preset-env"]
 }

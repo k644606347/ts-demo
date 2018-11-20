@@ -34,7 +34,8 @@ module.exports = {
                             {
                                 loader: 'ts-loader',
                                 options: {
-                                    configFile: path.resolve('./tsconfig.json')
+                                    configFile: path.resolve('./tsconfig.json'),
+                                    getCustomTransformers: path.join(__dirname, './webpack.ts.transformers.js')
                                 }
                             }
                         ]
