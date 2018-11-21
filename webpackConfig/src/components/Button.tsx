@@ -18,13 +18,16 @@ const typeMap = {
 export class Button extends React.PureComponent<ButtonProps, any> {
     render() {
         let { children, style, disabled, type, className } = this.props,
-            classNames = [cssModules.btn, typeMap[type], className];
+            classNames = [cssModules.btn, typeMap[type], className, disabled && cssModules.disabled];
 
-        return <button className={classNames.join(' ')} style={style} disabled={disabled}>{ children }</button>
+        return <a className={classNames.filter(className => !!className).join(' ')} style={style}>{ children }</a>
     }
     handleClick(e: React.MouseEvent) {
-        let { onClick } = this.props;
+        let { disabled, onClick } = this.props;
 
+        if (disabled) {
+            return false;
+        }
         onClick && onClick(e);
     }
 }

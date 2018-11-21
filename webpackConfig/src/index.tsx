@@ -1,8 +1,9 @@
+import "@babel/polyfill";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { Button } from "./components/Button";
 
-
+console.log(''.padStart(4, '^'));
 class App extends React.PureComponent<any, any>{
     constructor(props) {
         super(props);
